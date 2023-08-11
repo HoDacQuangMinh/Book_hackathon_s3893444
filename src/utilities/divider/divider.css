@@ -1,0 +1,164 @@
+/* Divider section 1 & 2 */
+.custom-shape-divider-top-1681408915 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 101;
+}
+
+.custom-shape-divider-top-1681408915 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 236px;
+    transform: translateY(10px);
+}
+
+.custom-shape-divider-top-1681408915 .shape-fill {
+    fill: #7a0c5f;
+}
+
+.custom-shape-divider-top-1681408915 .divider-title {
+    position: relative;
+    z-index: 1;
+    color: #ff06de;
+}
+
+
+.custom-shape-divider-top-1681408915 .divider-title h1 {
+    transform: rotate(180deg) translateY(-190px);
+    font-size: 3.3rem;
+    float: right;
+    padding-left: 50px;
+    height: 40px;
+}
+
+.custom-shape-divider-top-1681408915 .divider-title h1::before {
+        content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    border-bottom: var(--dash);
+    transform: rotate(-2deg);
+    transform-origin: bottom;
+    border-bottom-width: 12px;
+}
+
+.custom-shape-divider-top-1681408915 .divider-title h3,h4 {
+    font-family: var(--dancingScript);
+    font-size: 1.9rem;
+    font-style: italic;
+    float: right;
+}
+
+
+.custom-shape-divider-top-1681408915 .divider-title h3 {
+    transform: rotate(180deg) translateY(-155px) translateX(-150px);
+}
+
+.custom-shape-divider-top-1681408915 .divider-title a {
+    transform: rotate(180deg) translateY(-210px);
+    float: left;
+    color: #fa04bc;
+    padding-right: 40px;
+    text-decoration: none;
+    font-style: var(--avenir);
+}
+
+@media (max-width:500px) {
+    .custom-shape-divider-top-1681408915 .divider-title h1 {
+        transform: rotate(180deg) translateY(-180px);
+        font-size: 2.5rem;
+        border-bottom-width: 10px;
+    }
+
+    .custom-shape-divider-top-1681408915 .divider-title h3,h4 {
+        display: none;
+    }
+
+    .custom-shape-divider-top-1681408915 .divider-title h3 {
+        transform: rotate(180deg) translateY(-160px) translateX(-150px);
+        font-size: 1.5rem;
+        float: right;
+        font-style: italic;
+    }
+}
+
+@media (max-width:375px) {
+    .custom-shape-divider-top-1681408915 .divider-title h1 {
+        transform: rotate(180deg) translateY(-180px) translateX(-25px);
+        font-size: 2.2rem;
+    }
+}
+
+/* Divider section 2 heading */
+.custom-shape-divider-top-1681408915 .divider-title h4 {
+    transform: rotate(180deg) translateY(-155px) translateX(-190px);
+}
+/* Divider section 3 */
+.book-section3 {
+    position: relative;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    border-radius: 65% 35%;
+    background-color: rgb(112, 6, 98);
+    height: max-content;
+    z-index: 101;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* Footer divider and book alike styling */
+.footer-divider {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 3;
+}
+
+.footer-divider .layer-1 {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.footer-divider .layer-1 .shape-fill {
+    fill: rgb(232, 223, 223);
+}
+
+.footer-divider .layer-2 {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+    transform: translateY(-110%);
+}
+
+.footer-divider .layer-2 .shape-fill {
+    fill: whitesmoke
+}
+
+.footer-divider .layer-3 {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+    transform: translateY(-220%);
+}
+
+.footer-divider .layer-3 .shape-fill {
+    fill: white
+}

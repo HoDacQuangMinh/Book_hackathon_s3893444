@@ -1,0 +1,292 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 2
+Author: Ho Dac Quang Minh
+ID: s3893444
+Acknowledgement: Acknowledge the resources that you use here.
+https://htmlcheatsheet.com/ (for coding resources)
+sketchfab ( for 3d model)
+student sample
+https://csscheatsheet.com/(for css resources)
+Amazon website (for book cover and book  information)
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="src/section/navigation/menu.css" />
+    <link rel="stylesheet" href="src/utilities/background/landing-cover.css" />
+    <link rel="stylesheet" href="src/utilities/background/room-bg.css" />
+    <link rel="stylesheet" href="src/section/navigation/nav-bar.css" />
+    <link rel="stylesheet" href="src/utilities/buttons/button-style.css" />
+    <link rel="stylesheet" href="src/utilities/buttons/back-to-top.css" />
+    <link rel="stylesheet" href="src/utilities/form/contact-form.css" />
+    <link rel="stylesheet" href="src/section/footer/footer.css" />
+    <link rel="stylesheet" href="src/utilities/divider/divider.css" />
+    <link rel="stylesheet" href="src/section/navigation/breadcrumb.css" />
+
+    <!-- Nav Bar icons -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/feed.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/phone.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Bookstore hackathon</title>
+  </head>
+  <body>
+    <div class="back-to-top">
+      <a href="#landing" class="back-to-top">
+        <img src="./assets/back-to-top.gif" alt="back-to-top" width="75" />
+      </a>
+    </div>
+
+    <div class="menu-wrap">
+      <p><strong>MENU</strong></p>
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="book-category.html">Book Categories</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="nav">
+      <li>
+        <a href="index.html">
+          <i class="gg-home-alt"></i>
+          <span class="title"><strong>Home</strong></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="book-category.html">
+          <i class="gg-feed"></i>
+          <div class="title"><strong>Book Categories</strong></div>
+        </a>
+      </li>
+
+      <li>
+        <a href="contact-us.html">
+          <i class="gg-phone"></i>
+          <div class="title"><strong>Contact Us</strong></div>
+        </a>
+      </li>
+    </ul>
+
+    <div class="landing" id="landing">
+      <div class="bg-layer"></div>
+      <div class="content">
+        <img src="https://api.time.com/wp-content/uploads/2018/09/gettyimages-899060246.jpg" class="logo" alt="Traversy Media" />
+        <div class="title"><strong>Copyrights Bookstore</strong></div>
+        <div class="title bookstore"><strong>Contact Form</strong></div>
+      </div>
+    </div>
+
+    <div class="sketchfab-embed-wrapper">
+      <iframe
+        title="Bookstore Cover"
+        frameborder="0"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        allow="autoplay; xr-spatial-tracking"
+        xr-spatial-tracking
+        execution-while-out-of-viewport
+        execution-while-not-rendered
+        web-share
+        src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&scrollwheel=0&camera=0&ui_stop=0&autospin=0.007"
+      >
+      </iframe>
+    </div>
+
+    <div class="custom-shape-divider-top-1681408915">
+      <div class="divider-title">
+        <h1>Contact Us</h1>
+        <h4>Feedback? </h4>
+      </div>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="breadcrumb">
+      <a href="index.html" class="active">Home</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <div class="contact-us">
+      <div class="title">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" placeholder="Name" />
+          <input type="text" class="input" placeholder="Email Address" />
+          <input type="text" class="input" placeholder="Phone" />
+          <input type="text" class="input" placeholder="Subject" />
+        </div>
+        <div class="other-fields">
+          <div class="purpose-fields">
+            <label for="contact-purpose">Purpose:</label>
+            <select id="contact-purpose" name="contact-purpose">
+              <option value="sell-books">sell books</option>
+              <option value="buy-books">buy books</option>
+            </select>
+          </div>
+          <div class="preference">
+            <span>Preference:</span>
+            <div>
+              <input
+                type="checkbox"
+                id="contact-by-email"
+                name="contact-preference"
+                value="email"
+              />
+              <label for="contact-by-email">By email</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="contact-by-phone"
+                name="contact-preference"
+                value="phone"
+              />
+              <label for="contact-by-phone">By phone</label>
+            </div>
+          </div>
+          <div class="newsletter">
+            <span>Receive weekly newsletter:</span>
+            <div>
+              <input
+                type="radio"
+                id="newsletter-yes"
+                name="newsletter"
+                value="yes"
+                checked
+              />
+              <label for="newsletter-yes">Yes</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="newsletter-no"
+                name="newsletter"
+                value="no"
+              />
+              <label for="newsletter-no">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="msg">
+          <textarea placeholder="Message"></textarea>
+          <a class="send-btn" href="contact-us.html" target="_self">Send</a>
+          <a class="reset-btn" href="contact-us.html" target="_self">Reset</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="general-footer">
+        <div class="footer-divider">
+          <svg
+            class="layer-1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+          <svg
+            class="layer-2"
+            data-name="Layer 2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+          <svg
+            class="layer-3"
+            data-name="Layer 3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <p></p>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="book-category.html">Book Categories</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <p>About Us</p>
+            <div class="social-icons">
+              <a href="https://github.com/HoDacQuangMinh">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              <a href="https://www.facebook.com/profile.php?id=100008517787895">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </p>
+            <p>© 2023 Copyrights Bookstore. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

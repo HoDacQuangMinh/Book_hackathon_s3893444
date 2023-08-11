@@ -1,0 +1,108 @@
+.book-section3 img {
+    max-width: 100%;
+    border-radius: 35% 65%;
+    transform: scale(1.1);
+    margin: -55px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.section3-title h2 {
+    border-bottom: var(--dash);
+    transform: rotate(-2deg);
+    transform-origin: bottom;
+    border-bottom-width: 12px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0;
+}
+
+.book-section3 .section3-title {
+    position: relative;
+    font-size: 2rem;
+    color: #F5F5F5;
+    /* display: flex;
+    justify-content: space-around; */
+    /* background-color: red; */
+}
+
+.section3-title p {
+    font-size: 1.7rem;
+}
+
+.book-section3 .view-all {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.book-section3 div {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+/* More books */
+.more-books {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.more-books .more-audio-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-books p {
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 5rem;
+    z-index: 999;
+}
+
+.more-books .inner-disc {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+  
+.more-books .more-audio-books img {
+max-width: 100%;
+box-shadow: var(--shadow);
+border-radius: 50%;
+max-height: 295px;
+}
+
+@media (max-width:780px) {
+    .book-section3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:600px) {
+    .book-section3 img {
+        max-width: 150%;
+        border-radius: 65% 35%;
+        margin: 0 auto;
+        transform: translate(-15%, -50px);
+    }
+
+    .section3-title p {
+        display: none;
+    }
+}

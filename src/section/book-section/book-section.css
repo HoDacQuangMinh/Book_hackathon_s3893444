@@ -1,0 +1,191 @@
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem 4rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      /* transform: translateX(50px); */
+    color: #F5F5F5;
+    z-index: 3;
+    }
+    
+    .grid-3 {
+        display: grid;
+        grid-gap: 100px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .center {
+        text-align: center;
+        margin: auto;
+    }
+    
+    /* Change book background image */
+    .book--1 .book__img, .book--1 .book__img--hover {
+      background-image: url('https://m.media-amazon.com/images/I/71ashnErG2L.jpg');
+    }
+    
+    .book--2 .book__img, .book--2 .book__img--hover {
+      background-image: url('https://d1b14unh5d6w7g.cloudfront.net/1628604247.01.S001.JUMBOXXX.jpg?Expires=1691859131&Signature=GfxK~elQXatg4tqC4EVwBeD1SIXv4sOM~hI-LJzRuHZyGXuvhCD8J1Z~IShvJAjskDojIPToSIblwQS4VpsXhhucFTwqp7B0CKVkfu7ouYfjtlPMhO8PZMErG~r3xfKPREYYOprtB-wkCTjFN9s4GP9AdrV7poFIbtO8xmaVuSA_&Key-Pair-Id=APKAIUO27P366FGALUMQ');
+    }
+    
+    .book--3 .book__img, .book--3 .book__img--hover {
+      background-image: url('https://m.media-amazon.com/images/I/51jdOu8lsPL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg');
+    }
+    
+    .book--4 .book__img, .book--4 .book__img--hover {
+      background-image: url('https://m.media-amazon.com/images/I/51jdOu8lsPL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg');
+    }
+    
+    .book--5 .book__img, .book--5 .book__img--hover {
+      background-image: url('https://m.media-amazon.com/images/P/1538719339.01._SCLZZZZZZZ_SX500_.jpg');
+    }
+    
+    .book--6 .book__img, .book--6 .book__img--hover {
+      background-image: url('https://m.media-amazon.com/images/I/71ashnErG2L.jpg');
+    }
+    
+    .book--7 .book__img, .book--7 .book__img--hover {
+      background-image: url('https://shop.lonelyplanet.com/cdn/shop/products/world-s-best-street-food-mini-edition_700x.jpg?v=1667767941');
+    }
+    .book--8 .book__img, .book--8 .book__img--hover {
+        background-image: url('https://m.media-amazon.com/images/P/081298692X.01._SCLZZZZZZZ_SX500_.jpg');
+    }
+    .book--9 .book__img, .book--9 .book__img--hover {
+        background-image: url('https://m.media-amazon.com/images/P/B0CCCNLWJC.01._SCLZZZZZZZ_SX500_.jpg');
+    }
+
+    .book__img {
+    visibility: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 250px;
+    }
+    
+    .book__info-hover {
+      position: absolute;
+      padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    }
+    
+    .book__img--hover {
+    transition: 0.2s all ease-out;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+    position: absolute;
+      height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+    }
+    
+    .book {
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+      width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    }
+    
+    .book:hover, .book__info:hover {
+      transform: scale(1, 1);
+      background-color: #fff;
+    }
+    
+    .book__info:hover {
+      transform: scale(1.1, 1.1);
+    }
+    
+    .book__info {
+    z-index: 2;
+    /* background-color: #fff; */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+    background-color: rgb(202, 9, 154);
+    }
+    
+    .book__category {
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    color: #F5F5F5;
+    }
+    
+    .book__title {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-family: 'Roboto Slab', serif;
+      text-transform: uppercase;
+    }
+    
+    .book__by {
+      font-size: 12px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+    }
+    
+    .book__author {
+      font-weight: 600;
+      text-decoration: none;
+      color: #F5F5F5;
+    }
+    
+    .book:hover .book__img--hover {
+      height: 100%;
+      opacity: 0.3;
+    }
+    
+    .book:hover .book__info,
+    .book:hover .book__author,
+    .book:hover .book__category {
+      background-color: transparent;
+      color: rgb(179, 14, 165);
+      position: relative;
+    }
+    
+    .book:hover .book__info-hover {
+      opacity: 1;
+    }
+    
+    @media (max-width: 780px) {
+    
+      .container {
+        display: block;
+        transform: translateX(-1px);
+      }
+    
+      .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    
+      .book {
+        width: 75%;
+      }
+    
+      .book-section div {
+        padding: 1.2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .book__info, .book__info-hover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }

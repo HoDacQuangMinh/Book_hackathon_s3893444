@@ -1,0 +1,60 @@
+a {
+    text-decoration: none;
+    color: inherit; 
+    }
+    
+    .button {
+    position: relative;
+    margin: auto;
+    transition: all .2s ease;
+    padding-top: 19px;
+    font-family: var(--inconsolata);
+    }
+    
+    .button:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -7px;
+        display: block;
+        border-radius: 28px;
+        background: #72077c;
+        width: 50px;
+        height: 56px;
+        transition: all .3s ease; 
+    }
+    .button button {
+        position: relative;
+    /*     Change the font size */
+        font-size: 0.8rem; 
+        line-height: 18px;
+        font-family: var(--inconsolata);
+    
+        font-weight: 900;
+        letter-spacing: .25em;
+        text-transform: uppercase;
+        vertical-align: middle; 
+    
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        height: 100%;
+    }
+    
+    .button:hover:before {
+        width: 125%;
+        background: #72077c; 
+    }
+    
+    .add-to-cart .button:hover:before {
+        width: 130%;
+        background: #72077c; 
+        height: 135%;
+    }
+    
+    .button:active {
+        transform: scale(0.96); 
+    }
