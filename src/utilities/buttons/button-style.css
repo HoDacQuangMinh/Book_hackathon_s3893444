@@ -25,7 +25,7 @@ a {
     }
     .button button {
         position: relative;
-    /*     Change the font size */
+    
         font-size: 0.8rem; 
         line-height: 18px;
         font-family: var(--inconsolata);

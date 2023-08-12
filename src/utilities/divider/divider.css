@@ -97,11 +97,11 @@
     }
 }
 
-/* Divider section 2 heading */
+
 .custom-shape-divider-top-1681408915 .divider-title h4 {
     transform: rotate(180deg) translateY(-155px) translateX(-190px);
 }
-/* Divider section 3 */
+
 .book-section3 {
     position: relative;
     box-shadow: var(--shadow);
@@ -116,7 +116,7 @@
     width: 70%;
 }
 
-/* Footer divider and book alike styling */
+
 .footer-divider {
     position: absolute;
     bottom: 100%;

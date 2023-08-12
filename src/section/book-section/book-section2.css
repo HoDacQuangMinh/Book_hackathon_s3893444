@@ -27,7 +27,7 @@
     }
   }
   
-  /* Top Container */
+  
   .book-category-section2, 
   .book-section2 {
     display: grid;
@@ -56,7 +56,7 @@
     font-family: var(--roboto);
   }
   
-  /* Showcase */
+  
   .showcase {
     grid-area: showcase;
     min-height: 400px;
@@ -64,7 +64,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: black; */
+    
     position: relative;
   }
   
@@ -127,11 +127,11 @@
   .showcase .showcase-add-to-cart a .showcase-book--2,
   .showcase .showcase-add-to-cart a .showcase-book--3 {
     font-size: 1.2rem;
-    /* background: transparent; */
+    
     margin: 0 auto;
   }
   
-  /* Top Box */
+  
   .top-box {
     padding: 1.5rem;
     background-color: rgb(212, 15, 196);

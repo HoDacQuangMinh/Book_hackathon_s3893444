@@ -35,18 +35,18 @@ li a {
 li a .gg-home-alt {
     transform: scale(2) translateY(5px);
     transition: transform .5s;
-    backface-visibility: hidden; /* Add this line */
+    backface-visibility: hidden; 
 }
 
 li a .gg-feed {
     transform: scale(2) translateY(4px);
     transition: transform .5s;
-    backface-visibility: hidden; /* Add this line */
+    backface-visibility: hidden; 
 }
 li a .gg-phone {
     transform: scale(2);
     transition: transform .5s;
-    backface-visibility: hidden; /* Add this line */
+    backface-visibility: hidden; 
 }
 
 li a .title {
